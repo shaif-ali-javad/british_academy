@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for movie_obj in movies %}
+    <p>title: {{movie_obj.title}}</p>
+    <p>summery: {{movie_obj.summery}}</p>
+    <p>year: {{movie_obj.year}}</p>
+    {% if success %}
+    <p>Movie was a movie_obj.success</p>
+    {% else %}
+    <p>Movie was a failure</p>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
